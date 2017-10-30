@@ -1,0 +1,57 @@
+body {
+	background-color: #f3e0e0;
+}
+
+h1 {
+	color: #b33232;
+	font-family: 'Archivo Black', sans-serif;
+	margin-bottom: 0;
+}
+
+#heading {
+	text-align: center;
+}
+
+#heading p {
+	font-family: 'Roboto Mono', monospace;
+	margin-top: 7px;
+}
+
+#tableHolder {
+	background-color: white;
+	width: 60%;
+	margin: 3% 20%;
+}
+
+.circle {
+	background-color: lightgray;
+	padding: 53px;
+	border-radius: 50%;
+	width: 3%;
+	text-align: center;
+}
+
+#row1 {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-top: 5%;
+}
+
+#row2 {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-top: 5%;
+}
+
+#row3 {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
