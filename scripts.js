@@ -2,11 +2,14 @@ $(document).ready(function() {
  // all of the jQuery / JS goes in here 
  console.log("Hi");
 
+// function to generate HTML content saying what table is clicked on
 $(".available").on("click", function(e) {
 	$("form").css("display", "block");
-	console.log($(this).text());
 	var tableNum = $(this).text();
-	$("p").text("Table Number: " + tableNum);
+	$("p#tableNum").text("Table Number: " + tableNum);
+	// $("input[type=submit]").on("click", function(e) {
+
+	// });
 });
 
 $("i").on("click", function(e) {
