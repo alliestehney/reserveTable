@@ -129,3 +129,7 @@ i:hover {
 	cursor: pointer;
 	color: black;
 }
+
+.reserved {
+	background-color: darkgray;
+}

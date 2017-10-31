@@ -7,18 +7,27 @@ $(".available").on("click", function(e) {
 	$("form").css("display", "block");
 	var tableNum = $(this).text();
 	$("p#tableNum").text("Table Number: " + tableNum);
-	// $("input[type=submit]").on("click", function(e) {
+	// console.log("***NO DOLLA***");
+	// console.log(this);
+	// console.log($(this));
 
-	// });
+	$("input[type=submit]").on("click", function(e) {
+		$("form").css("display", "none");
+		// $( "div:contains("+ tableNum +")").removeClass("available").addClass("reserved");
+		// e.target.parent;
+		e.preventDefault();
+		return $("div .circle:contains("+ tableNum.toString() + ")").removeClass("available").addClass("reserved");
+	});
+
 });
 
 $("i").on("click", function(e) {
 	$("form").css("display", "none");
 });
 
-$("input[type=submit]").on("click", function(e) {
-	$(this).removeClass("available");
-	$(this).addClass("reserved");
-});
+// $("input[type=submit]").on("click", function(e) {
+// 	$(this).removeClass("available");
+// 	$(this).addClass("reserved");
+// });
 
 });
