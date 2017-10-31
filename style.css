@@ -1,9 +1,9 @@
 body {
-	background-color: #f3e0e0;
+	background-color: #EEE;
 }
 
 h1 {
-	color: #b33232;
+	color: #E34E45;
 	font-family: 'Archivo Black', sans-serif;
 	margin-bottom: 0;
 }
@@ -131,5 +131,5 @@ i:hover {
 }
 
 .reserved {
-	background-color: darkgray;
+	background-color: #ADAAAA;
 }
