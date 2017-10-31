@@ -31,7 +31,7 @@ h4 {
 
 .circle {
 	background-color: lightgray;
-	padding: 53px;
+	padding: 11%;
 	border-radius: 50%;
 	width: 3%;
 	text-align: center;
@@ -137,4 +137,11 @@ i:hover {
 .reserved:hover {
 	background-color: gray;
 	cursor: not-allowed;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 420px) {
+	.circle {
+		padding: 13px;
+		width: 15%;
+	}
 }
