@@ -39,7 +39,7 @@ h4 {
 }
 
 .circle:hover {
-	background-color: gray;
+	background-color: #ADAAAA;
 	cursor: pointer;
 }
 
@@ -131,5 +131,10 @@ i:hover {
 }
 
 .reserved {
-	background-color: #ADAAAA;
+	background-color: gray;
+}
+
+.reserved:hover {
+	background-color: gray;
+	cursor: not-allowed;
 }
