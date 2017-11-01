@@ -14,10 +14,27 @@ $(document).ready(function() {
 			$("input[type=submit]").on("click", function(e) {
 				$("form").css("display", "none");
 				e.preventDefault();
-				var tableNum2 = tableNum;
+				var tableNum2 = tableNum.toString();
+				console.log("***TABLE NUM:")
+				console.log(tableNum);
 
 				storeInfo();
-				console.log(reservedTables); 
+				console.log("***LIST:")
+				console.log(reservedTables);
+
+				reservedTables.forEach( function(tableObj) {
+					if (tableObj.table === tableNum2) {
+						console.log("TABLE IS IN THE ARRAY!!");
+						var tableDiv = $("#tableHolder").find("div:contains('"+ tableObj.table + "')");
+						console.log(tableDiv);
+						console.log(tableDiv[2]);
+						var circleDiv = tableDiv[2];
+						circleDiv.after("Name: " + tableObj.name  + " Seats: " + tableObj.table);
+						clearVals();
+					} else {
+						console.log("NOT IN THE ARRAY.");
+					}
+				});
 
 				function storeInfo() {
 					var nameVal = $("#name").val(); // gets name that is inputed
