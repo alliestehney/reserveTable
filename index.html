@@ -17,35 +17,35 @@
 		<div id="tableHolder">
 			<div id="row1">
 				<div class="wholeThing">
-					<div class="circle available">1</div>
+					<div class="circle available" data-tablenum="1" id="1">1</div>
 				</div>
 				<div class="wholeThing">
-					<div class="circle available">2</div>
+					<div class="circle available" id="2">2</div>
 				</div>
 				<div class="wholeThing">
-					<div class="circle available">3</div>
+					<div class="circle available" data-tablenum="3" id="3">3</div>
 				</div>
 			</div>
 			<div id="row2">
 				<div class="wholeThing">
-					<div class="circle available">4</div>
+					<div class="circle available" data-tablenum="4" id="4">4</div>
 				</div>
 				<div class="wholeThing">
-					<div class="circle available">5</div>
+					<div class="circle available" id="5">5</div>
 				</div>
 				<div class="wholeThing">
-					<div class="circle available">6</div>
+					<div class="circle available" data-tablenum="6" id="6">6</div>
 				</div>
 			</div>
 			<div id="row3">
 				<div class="wholeThing">
-					<div class="circle available">7</div>
+					<div class="circle available" data-tablenum="7" id="7">7</div>
 				</div>
 				<div class="wholeThing">
-					<div class="circle available">8</div>
+					<div class="circle available" data-tablenum="8" id="8">8</div>
 				</div>
 				<div class="wholeThing">
-					<div class="circle available">9</div>
+					<div class="circle available" data-tablenum="9" id="9">9</div>
 				</div>
 			</div>
 		</div>
@@ -58,9 +58,14 @@
 				<input type="text" placeholder="Allie" value="" id="name">
 				<input type="text" placeholder="248-555-5555" value="" id="phone">
 				<input type="text" placeholder="# of seats" value="" id="seats">
-				<input type="submit" placeholder="RESERVE" value="RESERVE">
+				<button id="reservation" type="button">RESERVE</button>
 			</div>
 		</form>
+
+		<div id="popUpInfo">
+			<div id="hoverName"></div>
+			<div id="partySize"></div>
+		</div>
 
 		<script src="jquery-3.2.1.js"></script>
 		<script src="scripts.js"></script>
