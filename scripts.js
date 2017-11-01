@@ -10,12 +10,14 @@ $(document).ready(function() {
 			$("p#tableNum").text("Table Number: " + tableNum);
 			lastTableClicked = this;
 			console.log(tableNum);
-			
+
 			$("input[type=submit]").on("click", function(e) {
 				$("form").css("display", "none");
 				e.preventDefault();
+				var tableNum2 = tableNum;
 
 				storeInfo();
+				console.log(reservedTables); 
 
 				function storeInfo() {
 					var nameVal = $("#name").val(); // gets name that is inputed
@@ -29,10 +31,11 @@ $(document).ready(function() {
 					clearVals();
 				}
 
-				function createObj(nameValue, seatsValue) {
+				function createObj(nameValue, seatsValue, tableNum) {
 					reservationInfo = {};
 					reservationInfo.name = nameValue;
 					reservationInfo.seats = seatsValue;
+					reservationInfo.table = tableNum2;
 					return reservationInfo;
 				}
 
@@ -46,8 +49,8 @@ $(document).ready(function() {
 				return $("div .circle:contains("+ tableNum.toString() + ")").removeClass("available").addClass("reserved");
 			});
 		
-			console.log(reservedTables); // logs the most updated list
-			console.log(reservedTables[0]);
+			// console.log(reservedTables); // logs the most updated list
+			// console.log(reservedTables[0]);
 		} else {
 			$("form").css("display", "none");
 		}
