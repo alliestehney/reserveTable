@@ -31,7 +31,7 @@ h4 {
 
 .circle {
 	background-color: lightgray;
-	padding: 11%;
+	padding: 33%;
 	border-radius: 50%;
 	width: 3%;
 	text-align: center;
@@ -144,4 +144,24 @@ i:hover {
 		padding: 13px;
 		width: 15%;
 	}
+}
+
+#name:focus, #phone:focus, #seats:focus {
+	outline:none;
+}
+
+.box {
+	background-color: white;
+	width: 15%;
+	bottom: 13%;
+}
+
+.box p {
+	/*padding: 0;*/
+	margin: 0;
+}
+
+.wholeThing {
+	display:block;
+	width: 33%;
 }
